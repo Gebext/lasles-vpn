@@ -2,7 +2,7 @@
 
 import Logo from "../../../../public/assets/Vector-logo.svg";
 import Image from "next/image";
-import Signin from "../buttons/SignIn";
+import Login from "../buttons/Login";
 import Signup from "../buttons/Signup";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState, useEffect } from "react";
@@ -39,7 +39,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="flex lg:space-x-6 md:space-x-4 space-x-2 items-center">
-        <Signin />
+        <Login />
         <Signup />
         <RxHamburgerMenu
           className="md:hidden cursor-pointer"
