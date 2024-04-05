@@ -1,10 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import testimonials from "../../../public/data/testimonials";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Testimonials = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <section className="my-16">
+    <section className="my-16" id="testimonials">
       <h1 className="text-center font-medium md:text-4xl text-3xl lg:w-1/3 lg:mx-auto mx-8 ">
         Trusted by Thousands of Happy Customers
       </h1>
@@ -17,6 +25,7 @@ const Testimonials = () => {
           <div
             key={index}
             className="rounded-lg lg:p-8 p-4  border-2 border-secondary hover:border-primary"
+            data-aos="zoom-in-up"
           >
             <div className="flex items-center mb-4">
               <Image

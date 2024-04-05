@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Vector from "../../../public/assets/pricing.jpg";
 import { FaCheck } from "react-icons/fa";
 import PricingButton from "../components/buttons/PricingButton";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Pricing = () => {
   const plans = [
@@ -39,13 +44,19 @@ const Pricing = () => {
       cost: 12,
     },
   ];
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
-    <div className="my-16">
-      <h1 className="text-center font-medium text text-4xl">
+    <div className="my-16" id="pricing">
+      <h1 className="text-center font-medium text text-4xl" data-aos="zoom-in">
         Choose Your Plan
       </h1>
-      <p className="text-center lg:w-4/12 md:w-full mx-auto text-secondary">
+      <p
+        className="text-center lg:w-4/12 md:w-full mx-auto text-secondary"
+        data-aos="zoom-in"
+      >
         Let's choose the package that is best for you and explore it happily and
         cheerfully.
       </p>
@@ -54,6 +65,7 @@ const Pricing = () => {
           <div
             key={index}
             className="rounded-lg border-2 border-secondary md:my-20 my-4 md:w-8/12 w-10/12 mx-auto md:py-20 py-8"
+            data-aos="fade-up"
           >
             <div className="flex justify-center">
               <Image src={Vector} />
