@@ -30,6 +30,7 @@ const Testimonials = () => {
             <div className="flex items-center mb-4">
               <Image
                 src={testimonial.ava}
+                alt="ava"
                 className="w-[50px] h-[50px] rounded-full"
               />
               <div className="ml-4">

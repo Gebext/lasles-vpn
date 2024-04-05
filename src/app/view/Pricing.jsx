@@ -68,7 +68,7 @@ const Pricing = () => {
             data-aos="fade-up"
           >
             <div className="flex justify-center">
-              <Image src={Vector} />
+              <Image src={Vector} alt="iluts" />
             </div>
             <div className="w-10/12 mx-auto">
               <h1 className="text-center font-medium text-md mt-2">
