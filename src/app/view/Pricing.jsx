@@ -57,7 +57,7 @@ const Pricing = () => {
         className="text-center lg:w-4/12 md:w-full mx-auto text-secondary"
         data-aos="zoom-in"
       >
-        Let's choose the package that is best for you and explore it happily and
+        Lets choose the package that is best for you and explore it happily and
         cheerfully.
       </p>
       <div className="flex space-x-8 lg:w-8/12 md:mx-8 lg:mx-auto md:flex-row flex-col">
